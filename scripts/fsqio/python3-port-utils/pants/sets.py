@@ -163,6 +163,8 @@ def review(file_path: str, usage: Usage) -> None:
   if answer == 'y':
     rewrite(file_path, new_line, usage.line_no)
   print('\n')
+  # MOI - added for testing
+  moi_answer = input()
 
 
 def _generate_frozenset_fix(line: str) -> str:
